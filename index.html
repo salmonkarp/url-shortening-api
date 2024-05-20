@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+  </head>
+  <body>
+    <nav class="p0">
+      <a href="/" class="p0-logo">Shortly</a>
+      <a href="/features" class="p0-link-0">Features</a>
+      <a href="/pricing" class="p0-link-0">Pricing</a>
+      <a href="/resources" class="p0-link-0">Resources</a>
+
+      <a href="/login" class="p0-link-1">Login</a>
+      <a href="/signup" class="p0-link-2">Sign Up</a>
+      <a href="javascript:void(0);" class="p0-icon" onclick="toggleNav()">
+        <i class="fa-solid fa-bars fa-xl"></i>
+      </a>
+    </nav>
+    <div class="p0-dropdown">
+      <a href="/features" class="p0-ddlink-0">Features</a>
+      <a href="/pricing" class="p0-ddlink-0">Pricing</a>
+      <a href="/resources" class="p0-ddlink-0">Resources</a>
+      <hr />
+      <a href="/login" class="p0-ddlink-1">Login</a>
+      <a href="/signup" class="p0-ddlink-2">Sign Up</a>
+    </div>
+    <div class="p1">
+      <div class="p1-img-cont">
+        <img
+          src="/images/illustration-working.svg"
+          alt="Person working on a computer"
+          class="p1-img"
+        />
+      </div>
+      <div class="p1-1">
+        <h1 class="p1-1-title">More than just shorter links</h1>
+        <p class="p1-1-desc">
+          Build your brand’s recognition and get detailed insights on how your
+          links are performing.
+        </p>
+        <br />
+        <a href="/getstarted" class="p1-1-button">Get Started</a>
+      </div>
+    </div>
+    <div class="p2">
+      <div class="p2-pattern"></div>
+      <input
+        type="text"
+        name="linkInput"
+        id="linkInput"
+        class="p2-input"
+        placeholder="Shorten a link here.."
+      />
+      <button type="button" class="p2-button">Shorten it!</button>
+      <div class="p2-bg"></div>
+    </div>
+    <div class="p2-result">
+      <div class="result">
+        <div class="result-0">test1</div>
+        <hr />
+        <div class="result-1">test2</div>
+        <div class="result-2">Copy</div>
+      </div>
+      <div class="result">
+        <div class="result-0">test1</div>
+        <hr />
+        <div class="result-1">test2</div>
+        <div class="result-2 copied">Copied!</div>
+      </div>
+      <div class="result">
+        <div class="result-0">test1</div>
+        <hr />
+        <div class="result-1">test2</div>
+        <div class="result-2">Copy</div>
+      </div>
+    </div>
+
+    <div class="p3">
+      <div class="p3-bg"></div>
+      <div class="p3-0">
+        <h1 class="p3-0-title">Advanced Statistics</h1>
+        <p class="p3-0-desc">
+          Track how your links are performing across the web with our advanced
+          statistics dashboard.
+        </p>
+      </div>
+      <div class="p3-1">
+        <div class="p3-1-0">
+          <div class="img-cont">
+            <img
+              src="./images/icon-brand-recognition.svg"
+              alt="Statistics icon"
+            />
+          </div>
+          <h2 class="p3-1-0-title">Brand Recognition</h2>
+          <p class="p3-1-0-desc">
+            Boost your brand recognition with each click. Generic links don’t
+            mean a thing. Branded links help instil confidence in your content.
+          </p>
+        </div>
+        <div class="p3-1-0 p3-1-1">
+          <div class="img-cont">
+            <img
+              src="./images/icon-detailed-records.svg"
+              alt="Statistics icon"
+            />
+          </div>
+          <h2 class="p3-1-0-title">Detailed Records</h2>
+          <p class="p3-1-0-desc">
+            Gain insights into who is clicking your links. Knowing when and
+            where people engage with your content helps inform better decisions.
+          </p>
+        </div>
+        <div class="p3-1-0 p3-1-2">
+          <div class="img-cont">
+            <img
+              src="./images/icon-fully-customizable.svg"
+              alt="Statistics icon"
+            />
+          </div>
+          <h2 class="p3-1-0-title">Fully Customizable</h2>
+          <p class="p3-1-0-desc">
+            Improve brand awareness and content discoverability through
+            customizable links, supercharging audience engagement.
+          </p>
+        </div>
+        <div class="p3-line"></div>
+      </div>
+    </div>
+    <div class="p4">
+      <div class="p4-bg"></div>
+      <h1 class="p4-title">Boost your links today</h1>
+      <button class="p4-button">Get Started</button>
+    </div>
+
+    <div class="p5">
+      <div class="p5-bg"></div>
+      <h2 class="p5-0">Shortly</h2>
+      <div class="p5-1">
+        <h3 class="p5-1-header">Features</h3>
+        <a href="/linkshortening" class="p5-1-link">Link Shortening</a>
+        <a href="/brandedlinks" class="p5-1-link">Branded Links</a>
+        <a href="/analytics" class="p5-1-link">Analytics</a>
+      </div>
+      <div class="p5-1">
+        <h3 class="p5-1-header">Resources</h3>
+        <a href="/blog" class="p5-1-link">Blog</a>
+        <a href="/developers" class="p5-1-link">Developers</a>
+        <a href="/support" class="p5-1-link">Support</a>
+      </div>
+      <div class="p5-1">
+        <h3 class="p5-1-header">Company</h3>
+        <a href="/about" class="p5-1-link">About</a>
+        <a href="/ourteam" class="p5-1-link">Our Team</a>
+        <a href="/careers" class="p5-1-link">Careers</a>
+        <a href="/contact" class="p5-1-link">Contact</a>
+      </div>
+      <div class="p5-2">
+        <img src="/images/icon-facebook.svg" alt="Facebook" />
+        <img src="/images/icon-twitter.svg" alt="Twitter" />
+        <img src="/images/icon-pinterest.svg" alt="Pinterest" />
+        <img src="/images/icon-instagram.svg" alt="Instagram" />
+      </div>
+    </div>
+  </body>
+</html>
