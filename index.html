@@ -70,18 +70,25 @@
     </div>
     <div class="p2">
       <div class="p2-pattern"></div>
+
       <input
         type="text"
         name="linkInput"
         id="linkInput"
         class="p2-input"
         placeholder="Shorten a link here.."
+        onchange="removeInvalid()"
       />
-      <button type="button" class="p2-button">Shorten it!</button>
+      <div class="invalid-msg" style="display: none">
+        Please add a suitable link
+      </div>
+      <button type="button" class="p2-button" onclick="shorten()">
+        Shorten it!
+      </button>
       <div class="p2-bg"></div>
     </div>
     <div class="p2-result">
-      <div class="result">
+      <!-- <div class="result">
         <div class="result-0">test1</div>
         <hr />
         <div class="result-1">test2</div>
@@ -98,7 +105,7 @@
         <hr />
         <div class="result-1">test2</div>
         <div class="result-2">Copy</div>
-      </div>
+      </div> -->
     </div>
 
     <div class="p3">
